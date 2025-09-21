@@ -1,0 +1,18 @@
+/* Blue Frame Button */
+.button-frame-blue {
+    -fx-background-color: transparent;   /* Transparent background */
+    -fx-text-fill: #2563eb;              /* Blue text */
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 25px;              /* Padding */
+    -fx-border-color: #2563eb;           /* Blue border */
+    -fx-border-width: 2px;               /* Thickness of frame */
+    -fx-border-radius: 10px;             /* Rounded corners */
+    -fx-background-radius: 10px;
+}
+
+/* Hover effect */
+.button-frame-blue:hover {
+    -fx-background-color: #2563eb;       /* Fill on hover */
+    -fx-text-fill: white;                /* White text on hover */
+}

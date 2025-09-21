@@ -1,0 +1,13 @@
+/* Transparent pane with blue shadow */
+.anchor-shadow-blue-frame {
+    -fx-background-color: transparent;    /* No fill */
+    -fx-background-radius: 15px;          /* Rounded corners */
+    -fx-effect: dropshadow(
+            gaussian,                          /* Shadow type */
+            rgba(59, 130, 246, 0.3),           /* Blue shadow with 30% opacity */
+            20,                                 /* Blur radius */
+            0,                                  /* Spread */
+            0,                                  /* offsetX */
+            5                                   /* offsetY */
+    );
+}
