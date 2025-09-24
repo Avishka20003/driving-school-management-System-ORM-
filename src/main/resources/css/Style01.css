@@ -1,0 +1,93 @@
+.textfield-underline {
+    -fx-background-color: transparent;       /* Background clear */
+    -fx-border-width: 0 0 2 0;               /* Only bottom border */
+    -fx-border-color: rgba(0,0,0,0.3);       /* Black line with 30% opacity */
+    -fx-border-radius: 0;                    /* No rounding */
+    -fx-padding: 5 0 5 0;                    /* Top & bottom padding */
+    -fx-font-size: 14px;
+    -fx-text-fill: #333333;
+}
+
+.textfield-underline:focused {
+    -fx-border-color: rgba(0,0,0,0.6);       /* Darker line on focus */
+}
+
+
+.anchorpane-shadow {
+    -fx-background-color: #ffffff; /* Pane background */
+    -fx-background-radius: 10;     /* Rounded corners */
+    -fx-effect: dropshadow(gaussian, rgba(30,144,255,0.5), 10, 0, 0, 0);
+}
+/* Common TextField / Input style */
+.input-field {
+    -fx-background-color: transparent;       /* Clear background */
+    -fx-border-width: 0 0 2 0;               /* Bottom line only */
+    -fx-border-color: rgba(0,0,0,0.3);       /* Subtle black line */
+    -fx-border-radius: 0;
+    -fx-padding: 5 0 5 0;
+    -fx-font-size: 14px;
+    -fx-text-fill: #333333;
+}
+
+/* Focused effect */
+.input-field:focused {
+    -fx-border-color: #1e90ff;               /* Blue underline on focus */
+    -fx-effect: dropshadow(gaussian, rgba(30,144,255,0.2), 5, 0, 0, 0);
+}
+
+/* Hover effect */
+.input-field:hover {
+    -fx-border-color: #1e90ff;
+}
+
+/* Labels style */
+.label-field {
+    -fx-font-size: 14px;
+    -fx-text-fill: #555555;
+    -fx-padding: 0 0 3 0; /* space below label */
+}
+
+/* Container VBox / HBox style */
+.form-container {
+    -fx-padding: 15;
+    -fx-spacing: 10;
+}
+#txtEmail {
+    -fx-background-color: transparent;
+    -fx-border-width: 0 0 2 0;          /* Only bottom line */
+    -fx-border-color: #000000;          /* Black bottom line */
+    -fx-padding: 5 0 5 0;
+    -fx-font-size: 14px;
+    -fx-text-fill: #333333;
+}
+
+#txtEmail:focused {
+    -fx-border-color: #1e90ff;          /* Blue on focus */
+}
+/* Table Header */
+.table-view .column-header-background {
+    -fx-background-color: #1e90ff; /* Blue header */
+}
+/* Default Button style */
+.button-pta {
+    -fx-background-color: #1e90ff; /* Blue background */
+    -fx-text-fill: white;           /* White text */
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5;       /* Rounded corners */
+    -fx-cursor: hand;               /* Pointer on hover */
+    -fx-padding: 8 15 8 15;         /* Top Right Bottom Left */
+    -fx-border-width: 0;
+}
+
+/* Hover effect */
+.button-pta:hover {
+    -fx-background-color: #1c86ee;  /* Slightly darker blue */
+}
+
+/* Pressed / clicked effect */
+.button-pta:pressed {
+    -fx-background-color: #1874cd;  /* Even darker blue */
+    -fx-effect: innershadow(two-pass-box, rgba(0,0,0,0.2), 4, 0, 0, 1);
+}
+
