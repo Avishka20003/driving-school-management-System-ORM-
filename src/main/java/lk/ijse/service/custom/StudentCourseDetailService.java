@@ -1,4 +1,4 @@
-package lk.ijse.bo.custom;
+package lk.ijse.service.custom;
 
 
 
@@ -7,7 +7,7 @@ import lk.ijse.dto.StudentCourseDetailsDTO;
 import java.util.List;
 import java.util.Optional;
 
-public interface StudentCourseDetailBO {
+public interface StudentCourseDetailService {
     List<StudentCourseDetailsDTO> getAllStudentCourseDetails() throws Exception;
 
     String getLastStudentCourseDetailId() throws Exception;

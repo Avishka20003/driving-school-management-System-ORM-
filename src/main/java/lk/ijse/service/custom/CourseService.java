@@ -1,14 +1,13 @@
-package lk.ijse.bo.custom;
+package lk.ijse.service.custom;
 
 
-
-import lk.ijse.bo.SuperBO;
 import lk.ijse.dto.CourseDTO;
+import lk.ijse.service.SuperService;
 
 import java.util.List;
 import java.util.Optional;
 
-public interface CourseBO extends SuperBO {
+public interface CourseService extends SuperService {
     List<CourseDTO> getAllCourses() throws Exception;
 
     String getLastCourseId() throws Exception;

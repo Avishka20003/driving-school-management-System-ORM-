@@ -1,21 +1,22 @@
-package lk.ijse.bo.custom.impl;
+package lk.ijse.service.custom.impl;
 
 
-import lk.ijse.bo.custom.UserBO;
-import lk.ijse.bo.exception.DuplicateException;
-import lk.ijse.bo.exception.NotFoundException;
+
 import lk.ijse.dao.DAOFactory;
 import lk.ijse.dao.custom.UserDAO;
 import lk.ijse.dto.UserDTO;
 import lk.ijse.entity.User;
 import lk.ijse.enums.DAOTypes;
 import lk.ijse.mapper.UserMapper;
+import lk.ijse.service.custom.UserService;
+import lk.ijse.service.exception.DuplicateException;
+import lk.ijse.service.exception.NotFoundException;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-public class UserBOImpl implements UserBO {
+public class UserServiceImpl implements UserService {
 
     private  final UserDAO userDAO = DAOFactory.getInstance().getDAO(DAOTypes.USER);
 

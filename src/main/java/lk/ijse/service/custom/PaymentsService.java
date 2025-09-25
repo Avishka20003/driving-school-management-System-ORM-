@@ -1,12 +1,12 @@
-package lk.ijse.bo.custom;
+package lk.ijse.service.custom;
 
-import lk.ijse.bo.SuperBO;
+
 import lk.ijse.dto.PaymentsDTO;
 
 import java.util.List;
 import java.util.Optional;
 
-public interface PaymentsBO extends SuperBO {
+public interface PaymentsService {
     List<PaymentsDTO> getAllPayments() throws Exception;
 
     String getLastPaymentId() throws Exception;

@@ -1,12 +1,14 @@
-package lk.ijse.bo.custom.impl;
+package lk.ijse.service.custom.impl;
 
-import lk.ijse.elight_driving_school.dao.DAOFactory;
-import lk.ijse.elight_driving_school.dao.custom.InstructorDAO;
-import lk.ijse.elight_driving_school.dto.InstructorDTO;
-import lk.ijse.elight_driving_school.entity.Instructor;
-import lk.ijse.elight_driving_school.enums.DAOTypes;
-import lk.ijse.elight_driving_school.mapper.InstructorMapper;
-import lk.ijse.elight_driving_school.service.custom.InstructorService;
+
+
+import lk.ijse.dao.DAOFactory;
+import lk.ijse.dao.custom.InstructorDAO;
+import lk.ijse.dto.InstructorDTO;
+import lk.ijse.entity.Instructor;
+import lk.ijse.enums.DAOTypes;
+import lk.ijse.mapper.InstructorMapper;
+import lk.ijse.service.custom.InstructorService;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,14 +1,13 @@
-package lk.ijse.bo.custom;
+package lk.ijse.service.custom;
 
 
-
-import lk.ijse.bo.SuperBO;
 import lk.ijse.dto.StudentDTO;
+import lk.ijse.service.SuperService;
 
 import java.util.List;
 import java.util.Optional;
 
-public interface StudentBO extends SuperBO {
+public interface StudentService extends SuperService {
     List<StudentDTO> getAllStudents() throws Exception;
 
     String getLastStudentId() throws Exception;

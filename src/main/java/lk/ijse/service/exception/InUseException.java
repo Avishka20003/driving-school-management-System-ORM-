@@ -1,4 +1,4 @@
-package lk.ijse.bo.exception;
+package lk.ijse.service.exception;
 
 /**
  * --------------------------------------------

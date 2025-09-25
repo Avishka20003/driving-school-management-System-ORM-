@@ -1,12 +1,13 @@
-package lk.ijse.bo.custom;
+package lk.ijse.service.custom;
 
-import lk.ijse.bo.SuperBO;
+
 import lk.ijse.dto.InstructorDTO;
+import lk.ijse.service.SuperService;
 
 import java.util.List;
 import java.util.Optional;
 
-public interface InstructorBO extends SuperBO {
+public interface InstructorService extends SuperService {
     List<InstructorDTO> getAllInstructors() throws Exception;
 
     String getLastInstructorId() throws Exception;

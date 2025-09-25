@@ -1,14 +1,13 @@
-package lk.ijse.bo.custom;
+package lk.ijse.service.custom;
 
 
-
-import lk.ijse.bo.SuperBO;
 import lk.ijse.dto.UserDTO;
+import lk.ijse.service.SuperService;
 
 import java.util.List;
 import java.util.Optional;
 
-public interface UserBO extends SuperBO {
+public interface UserService extends SuperService {
     List<UserDTO> getAllUsers() throws Exception;
 
     String getLastUserId() throws Exception;
