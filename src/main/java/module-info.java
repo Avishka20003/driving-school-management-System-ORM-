@@ -12,6 +12,7 @@ module Driving.School.Management.System.ORM {
 
     // 🔑 FXML controller classes reflection access
     opens lk.ijse.controllers to javafx.fxml;
+    opens lk.ijse.entity to org.hibernate.orm.core;
 
     // Export main packages if other modules need them
     exports lk.ijse;
