@@ -116,6 +116,10 @@ public class StudentManagementController implements Initializable {
 
     }
 
+//    private void loadNextId() {
+//        txtStudentId.setText(studentService.generateNewStudentId());
+//    }
+
     private void loadAllStudents() {
         try {
             tableStudent.setItems(FXCollections.observableArrayList(
