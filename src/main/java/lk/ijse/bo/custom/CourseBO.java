@@ -8,7 +8,7 @@ import lk.ijse.dto.CourseDTO;
 import java.util.List;
 import java.util.Optional;
 
-public interface CourseService extends SuperBO {
+public interface CourseBO extends SuperBO {
     List<CourseDTO> getAllCourses() throws Exception;
 
     String getLastCourseId() throws Exception;
