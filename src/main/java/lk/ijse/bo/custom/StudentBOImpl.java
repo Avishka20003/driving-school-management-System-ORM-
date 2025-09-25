@@ -1,4 +1,4 @@
-package lk.ijse.bo.custom.impl;
+package lk.ijse.bo.custom;
 
 public class StudentBOImpl {
 }
