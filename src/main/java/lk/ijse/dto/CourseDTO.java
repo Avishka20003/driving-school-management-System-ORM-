@@ -16,7 +16,7 @@ public class CourseDTO {
     private String courseId;
     private String courseName;
     private String duration;
-    private double fee;
+    private double free;
     private String description;
     private String instructorId;
 
@@ -25,4 +25,13 @@ public class CourseDTO {
 
     @Builder.Default
     private List<LessonsDTO> lessons = new ArrayList<>();
+
+    public CourseDTO(String courseName, String description, double courseFee, String duration, String instructorId, Object instructorId1, Object studentCourseDetails, Object lessons) {
+    this.courseId = courseId;
+    this.courseName = courseName;
+    this.duration = duration;
+    this.free = courseFee;
+    this.description = description;
+    this.instructorId = instructorId;
+    }
 }

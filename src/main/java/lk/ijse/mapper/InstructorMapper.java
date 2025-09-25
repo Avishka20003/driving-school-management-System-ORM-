@@ -1,6 +1,5 @@
 package lk.ijse.mapper;
 
-
 import lk.ijse.dto.InstructorDTO;
 import lk.ijse.dto.tm.InstructorTM;
 import lk.ijse.entity.Instructor;
@@ -11,7 +10,7 @@ public class InstructorMapper {
         if (instructor == null) return null;
 
         return InstructorDTO.builder()
-                .instructorId(instructor.getInstructorId())
+                .instructorId(Long.toString(instructor.getInstructorId()))
                 .firstName(instructor.getFirstName())
                 .lastName(instructor.getLastName())
                 .email(instructor.getEmail())
@@ -33,7 +32,7 @@ public class InstructorMapper {
         if (dto == null) return null;
 
         Instructor instructor = new Instructor();
-        instructor.setInstructorId(dto.getInstructorId());
+        instructor.setInstructorId(Long.parseLong(dto.getInstructorId()));
         instructor.setFirstName(dto.getFirstName());
         instructor.setLastName(dto.getLastName());
         instructor.setEmail(dto.getEmail());

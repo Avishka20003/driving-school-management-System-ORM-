@@ -10,9 +10,9 @@ public class StudentCourseDetailsMapper {
         if (scd == null) return null;
 
         StudentCourseDetailsDTO dto = new StudentCourseDetailsDTO();
-        dto.setStudentCourseId(scd.getStudentCourseId());
-        dto.setStudentId(scd.getStudent() != null ? scd.getStudent().getStudentId() : null);
-        dto.setCourseId(scd.getCourse() != null ? scd.getCourse().getCourseId() : null);
+        dto.setStudentCourseId(scd.getStudentCourseId().toString());
+        dto.setStudentId(scd.getStudent() != null ? scd.getStudent().getStudentId().toString() : null);
+        dto.setCourseId(scd.getCourse() != null ? scd.getCourse().getCourseId().toString() : null);
         dto.setEnrollmentDate(scd.getEnrollmentDate());
         dto.setStatus(scd.getStatus());
         dto.setGrade(scd.getGrade());
@@ -24,7 +24,7 @@ public class StudentCourseDetailsMapper {
         if (dto == null) return null;
 
         StudentCourseDetails scd = new StudentCourseDetails();
-        scd.setStudentCourseId(dto.getStudentCourseId());
+        scd.setStudentCourseId(String.valueOf(Long.parseLong(dto.getStudentCourseId())));
         scd.setEnrollmentDate(dto.getEnrollmentDate());
         scd.setStatus(dto.getStatus());
         scd.setGrade(dto.getGrade());
