@@ -1,12 +1,11 @@
 package lk.ijse.entity;
 
 import jakarta.persistence.*;
+import lk.ijse.elight_driving_school.enums.Role;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import javax.management.relation.Role;
 
 @Entity
 @Table(name = "users")
